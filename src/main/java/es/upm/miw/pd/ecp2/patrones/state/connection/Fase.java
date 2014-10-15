@@ -12,8 +12,8 @@ public abstract class Fase {
 	
 	public abstract void iniciar(Conexion conexion);
 	
-	public abstract void enviar(String cadena);
+	public abstract void enviar(Conexion conexion, String cadena);
 	
-	public abstract void recibir(int valor);
+	public abstract void recibir(Conexion conexion, int valor);
 	
 }

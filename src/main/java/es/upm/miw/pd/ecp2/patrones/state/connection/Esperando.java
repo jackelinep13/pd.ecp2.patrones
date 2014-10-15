@@ -24,18 +24,18 @@ public class Esperando extends Fase{
 	}
 
 	@Override
-	public void enviar(String cadena) {
+	public void enviar(Conexion conexion, String cadena) {
 		throw new UnsupportedOperationException("AcciÃ³n no permitida... ");
 	}
 
 	@Override
-	public void recibir(int respuesta) {
-		if (respuesta == 0) {
-			//conexion.setEstado(Estado.PREPARADO);
-			//conexion.setFase(new Preparado());
+	public void recibir(Conexion conexion, int valor) {
+		if (valor == 0) {
+			conexion.setEstado(Estado.PREPARADO);
+			conexion.setFase(new Preparado());
         } else {
-        	//conexion.setEstado(Estado.CERRADO);
-    		//conexion.setFase(new Cerrado());
+        	conexion.setEstado(Estado.CERRADO);
+    		conexion.setFase(new Cerrado());
         }
 		
 	}

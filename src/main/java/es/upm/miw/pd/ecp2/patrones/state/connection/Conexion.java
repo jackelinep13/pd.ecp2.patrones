@@ -10,7 +10,13 @@ public class Conexion {
     private Link link;
     private Fase fase;
 
-      
+    public Conexion(Link link) {
+        assert link != null;
+        this.link = link;
+        this.estado = Estado.CERRADO;
+        this.setFase(new Cerrado());
+    }
+    
     public Link getLink() {
         return link;
     }
@@ -22,16 +28,9 @@ public class Conexion {
     public void setEstado(Estado estado) {
         this.estado = estado;
     }
-
+    
     protected void setFase(Fase fase) {
         this.fase = fase;
-    }
-
-    public Conexion(Link link) {
-        assert link != null;
-        this.link = link;
-        this.estado = Estado.CERRADO;
-        this.setFase(new Cerrado());
     }
     	
 	public void abrir(){
@@ -51,10 +50,10 @@ public class Conexion {
 	}
 	
 	public void enviar(String msg){
-		fase.enviar(msg);
+		fase.enviar(this, msg);
 	}
 	
 	public void recibir(int valor){
-		fase.recibir(valor);
+		fase.recibir(this, valor);
 	}
 }

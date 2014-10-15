@@ -23,12 +23,12 @@ public class Parado extends Fase{
 	}
 
 	@Override
-	public void enviar(String cadena) {
+	public void enviar(Conexion conexion, String cadena) {
 		throw new UnsupportedOperationException("AcciÃ³n no permitida... ");
 	}
 
 	@Override
-	public void recibir(int valor) {
+	public void recibir(Conexion conexion, int valor) {
 		throw new UnsupportedOperationException("AcciÃ³n no permitida... ");
 	}
 

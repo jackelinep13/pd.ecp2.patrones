@@ -1,11 +1,8 @@
 package es.upm.miw.pd.ecp2.patrones.state.connection;
 
 import es.upm.miw.pd.ecp2.patrones.state.connection.Estado;
-import es.upm.miw.pd.ecp2.patrones.state.connection.Link;
 
 public class Preparado extends Fase{
-	private Link link;
-	private Estado estado;
 	
 	@Override
 	public void abrir(Conexion conexion) {
@@ -29,14 +26,14 @@ public class Preparado extends Fase{
 	}
 
 	@Override
-	public void enviar(String msg) {
-		this.link.enviar(msg);
-		//conexion.setEstado(Estado.ESPERANDO);
-		//conexion.setFase(new Esperando());
+	public void enviar(Conexion conexion, String cadena) {
+		conexion.getLink().enviar(cadena);
+		conexion.setEstado(Estado.ESPERANDO);
+		conexion.setFase(new Esperando());
 	}
 
 	@Override
-	public void recibir(int valor) {
+	public void recibir(Conexion conexion, int valor) {
 		throw new UnsupportedOperationException("AcciÃ³n no permitida... ");
 	}
 
