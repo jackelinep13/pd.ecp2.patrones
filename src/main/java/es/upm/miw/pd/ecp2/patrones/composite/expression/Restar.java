@@ -7,30 +7,6 @@ public class Restar extends Operation{
 	}
 
 	@Override
-	public void Suma() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void Resta() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void Multiplicacion() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void Division() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
 	public int operar() {
 		// TODO Auto-generated method stub
 		return 0;

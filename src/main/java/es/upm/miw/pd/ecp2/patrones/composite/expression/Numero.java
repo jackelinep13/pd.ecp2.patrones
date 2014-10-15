@@ -4,37 +4,24 @@ import es.upm.miw.pd.ecp2.patrones.composite.expression.Expresion;
 
 public class Numero extends Expresion {
 
+	private int numero;
+	
 	public Numero(int valor) {
+		setNumero(valor);
     }
 
-	@Override
-	public void Suma() {
-		// TODO Auto-generated method stub
-		
+	public int getNumero() {
+		return numero;
 	}
 
-	@Override
-	public void Resta() {
-		// TODO Auto-generated method stub
-		
-	}
 
-	@Override
-	public void Multiplicacion() {
-		// TODO Auto-generated method stub
-		
+	public void setNumero(int numero) {
+		this.numero = numero;
 	}
-
-	@Override
-	public void Division() {
-		// TODO Auto-generated method stub
-		
-	}
-
+	
 	@Override
 	public int operar() {
-		// TODO Auto-generated method stub
-		return 0;
+		return getNumero();
 	}
 	
 	
