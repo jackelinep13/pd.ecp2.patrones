@@ -1,41 +1,43 @@
 package es.upm.miw.pd.ecp2.patrones.state.connection;
 
-public class Preparado extends Fase{
+import es.upm.miw.pd.ecp2.patrones.state.connection.Estado;
+import es.upm.miw.pd.ecp2.patrones.state.connection.Link;
 
+public class Preparado extends Fase{
+	private Link link;
+	private Estado estado;
+	
 	@Override
 	public void abrir(Conexion conexion) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void cerrar(Conexion conexion) {
-		// TODO Auto-generated method stub
-		
+		conexion.setEstado(Estado.CERRADO);
+		conexion.setFase(new Cerrado());
 	}
 
 	@Override
 	public void parar(Conexion conexion) {
-		// TODO Auto-generated method stub
-		
+		conexion.setEstado(Estado.PARADO);
+		conexion.setFase(new Parado());
 	}
 
 	@Override
 	public void iniciar(Conexion conexion) {
-		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
-	public void enviar(String cadena) {
-		// TODO Auto-generated method stub
-		
+	public void enviar(String msg) {
+		this.link.enviar(msg);
+		//conexion.setEstado(Estado.ESPERANDO);
+		//conexion.setFase(new Esperando());
 	}
 
 	@Override
 	public void recibir(int valor) {
-		// TODO Auto-generated method stub
-		
+		throw new UnsupportedOperationException("AcciÃ³n no permitida... ");
 	}
 
 }
