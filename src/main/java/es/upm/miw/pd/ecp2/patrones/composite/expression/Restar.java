@@ -2,14 +2,18 @@ package es.upm.miw.pd.ecp2.patrones.composite.expression;
 
 public class Restar extends Operation{
 
-	public Restar(Expresion exp1, Expresion exp2) {
-	        
+	public Restar(final Expresion exp1, final Expresion exp2) {
+	     super(exp1, exp2);  
 	}
 
 	@Override
 	public int operar() {
-		// TODO Auto-generated method stub
-		return 0;
+		return exp1.operar()-exp2.operar();
+	}
+	
+	@Override
+	public String toString() {
+		return "("+exp1.toString()+"-"+exp2.toString()+")";
 	}
 	
 }

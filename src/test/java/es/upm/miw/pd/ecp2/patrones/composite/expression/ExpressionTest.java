@@ -40,7 +40,7 @@ public class ExpressionTest {
     public void testResta() {
         assertEquals(1, this.exp3.operar());
     }
-
+    
     @Test
     public void testMultiplicacion() {
         assertEquals(8, this.exp4.operar());
@@ -60,4 +60,5 @@ public class ExpressionTest {
     public void testToString() {
         assertEquals("((3-((4/2)*3))+4)", this.exp6.toString());
     }
+   
 }

@@ -14,7 +14,6 @@ public class Numero extends Expresion {
 		return numero;
 	}
 
-
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
@@ -22,6 +21,11 @@ public class Numero extends Expresion {
 	@Override
 	public int operar() {
 		return getNumero();
+	}
+	
+	@Override
+	public String toString() {
+		return Integer.toString(numero);
 	}
 	
 	
