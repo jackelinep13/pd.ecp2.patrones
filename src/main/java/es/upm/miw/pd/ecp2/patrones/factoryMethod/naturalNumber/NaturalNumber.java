@@ -1,5 +1,7 @@
 package es.upm.miw.pd.ecp2.patrones.factoryMethod.naturalNumber;
 
-public class NaturalNumber {
+public abstract class NaturalNumber {
 
+	public abstract String getTextValue();
+	
 }

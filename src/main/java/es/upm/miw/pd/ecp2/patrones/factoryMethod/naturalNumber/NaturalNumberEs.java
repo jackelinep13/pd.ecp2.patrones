@@ -1,6 +1,6 @@
 package es.upm.miw.pd.ecp2.patrones.factoryMethod.naturalNumber;
 
-public class NaturalNumberEs {
+public class NaturalNumberEs extends NaturalNumber{
     private int value;
 
     private static final String[] textValue = {"cero", "uno", "dos", "tres", "cuatro", "cinco"};
@@ -29,5 +29,7 @@ public class NaturalNumberEs {
             return "???";
         }
     }
+
+	
 
 }

@@ -1,6 +1,6 @@
 package es.upm.miw.pd.ecp2.patrones.factoryMethod.naturalNumber;
 
-public class NaturalNumberEn {
+public class NaturalNumberEn extends NaturalNumber{
     private int value;
 
     private static final String[] textValue = {"zero", "one", "two", "three", "four", "five"};
