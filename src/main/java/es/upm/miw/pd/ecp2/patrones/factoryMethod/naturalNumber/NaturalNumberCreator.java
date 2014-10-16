@@ -1,5 +1,8 @@
 package es.upm.miw.pd.ecp2.patrones.factoryMethod.naturalNumber;
 
-public class NaturalNumberCreator {
+
+public abstract class NaturalNumberCreator {
+
+	public abstract NaturalNumber createNaturalNumber();
 
 }
