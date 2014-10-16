@@ -6,7 +6,7 @@ import upm.jbb.IO;
 public class NaturalNumberManager {
 	   
     private NaturalNumberCreator[] creadores = {new NaturalNumberEsCreator(), new NaturalNumberEnCreator()};
-    private NaturalNumberCreator creador = creadores[1];
+    private NaturalNumberCreator creador = creadores[0];
     private NaturalNumber naturalNumber;
     
 	String valorTexto="";     
