@@ -1,7 +1,8 @@
 package es.upm.miw.pd.patrones.text;
 
 public class Parrafo extends Conjunto{
-
+	private char caracter;
+	
 	@Override
 	public void add(Componente h) {
 		// TODO Auto-generated method stub
@@ -10,7 +11,8 @@ public class Parrafo extends Conjunto{
 
 	@Override
 	public void dibujar(boolean b) {
-		// TODO Auto-generated method stub
+		if(b) System.out.println(Character.toUpperCase(this.caracter));
+		else  System.out.println(this.caracter);
 	}
 
 }

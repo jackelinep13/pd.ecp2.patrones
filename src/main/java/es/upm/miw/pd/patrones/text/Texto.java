@@ -10,7 +10,8 @@ public class Texto extends Conjunto {
 
 	@Override
 	public void dibujar(boolean b) {
-		// TODO Auto-generated method stub
+		if(b) System.out.println(Character.toUpperCase(this.caracter));
+		else  System.out.println(this.caracter);
 	}
 
 }
