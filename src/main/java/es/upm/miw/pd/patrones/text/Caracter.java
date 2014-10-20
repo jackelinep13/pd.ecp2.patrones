@@ -13,9 +13,9 @@ public class Caracter extends Componente{
 	}
 
 	@Override
-	public void dibujar(boolean b) {
-		if(b) System.out.print(Character.toUpperCase(this.caracter));
-		else  System.out.print(this.caracter);
+	public String dibujar(boolean b) {
+		if(b) return Character.toString(Character.toUpperCase(this.caracter));
+		else  return Character.toString(this.caracter);
 	}
 
 }

@@ -10,9 +10,9 @@ public class Parrafo extends Conjunto{
 	}
 
 	@Override
-	public void dibujar(boolean b) {
-		if(b) System.out.println(Character.toUpperCase(this.caracter));
-		else  System.out.println(this.caracter);
+	public String dibujar(boolean b) {
+		if(b) return Character.toString(Character.toUpperCase(this.caracter));
+		else  return Character.toString(this.caracter);
 	}
 
 }

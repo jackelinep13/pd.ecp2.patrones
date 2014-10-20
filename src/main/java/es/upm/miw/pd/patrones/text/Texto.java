@@ -1,7 +1,8 @@
 package es.upm.miw.pd.patrones.text;
 
 public class Texto extends Conjunto {
-
+	private char caracter;
+	
 	@Override
 	public void add(Componente h) {
 		// TODO Auto-generated method stub
@@ -9,9 +10,9 @@ public class Texto extends Conjunto {
 	}
 
 	@Override
-	public void dibujar(boolean b) {
-		if(b) System.out.println(Character.toUpperCase(this.caracter));
-		else  System.out.println(this.caracter);
+	public String dibujar(boolean b) {
+		if(b) return Character.toString(Character.toUpperCase(this.caracter));
+		else  return Character.toString(this.caracter);
 	}
 
 }
