@@ -9,9 +9,8 @@ public class Parrafo extends Conjunto{
 	}
 
 	@Override
-	public Object dibujar(boolean b) {
+	public void dibujar(boolean b) {
 		// TODO Auto-generated method stub
-		return null;
 	}
 
 }

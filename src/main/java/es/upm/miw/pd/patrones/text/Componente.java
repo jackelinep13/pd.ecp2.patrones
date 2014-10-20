@@ -5,6 +5,6 @@ public abstract class Componente {
 		
 	public abstract void add(Componente h);
 
-	public abstract  Object dibujar(boolean b);
+	public abstract  void dibujar(boolean b);
 
 }

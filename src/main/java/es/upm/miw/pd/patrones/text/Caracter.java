@@ -6,19 +6,16 @@ public class Caracter extends Componente{
 	public Caracter(char caracter) {
 		this.caracter = caracter;
 	}
-
-
 	
 	@Override
 	public void add(Componente h) {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub		
 	}
 
 	@Override
-	public Object dibujar(boolean b) {
-		// TODO Auto-generated method stub
-		return null;
+	public void dibujar(boolean b) {
+		if(b) System.out.println(Character.toUpperCase(this.caracter));
+		else  System.out.println(this.caracter);
 	}
 
 }
