@@ -1,18 +1,21 @@
 package es.upm.miw.pd.patrones.text;
 
+import java.util.ArrayList;
+
 public class Parrafo extends Conjunto{
 	private char caracter;
 	
+	public Parrafo() {
+		super();
+		this.conjunto = new ArrayList<Componente>();
+
+	}
+	
 	@Override
 	public void add(Componente h) {
-		// TODO Auto-generated method stub
-		
+		conjunto.add(h);
 	}
 
-	@Override
-	public String dibujar(boolean b) {
-		if(b) return Character.toString(Character.toUpperCase(this.caracter));
-		else  return Character.toString(this.caracter);
-	}
+
 
 }

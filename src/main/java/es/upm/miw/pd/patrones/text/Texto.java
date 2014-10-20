@@ -9,10 +9,5 @@ public class Texto extends Conjunto {
 		
 	}
 
-	@Override
-	public String dibujar(boolean b) {
-		if(b) return Character.toString(Character.toUpperCase(this.caracter));
-		else  return Character.toString(this.caracter);
-	}
 
 }
