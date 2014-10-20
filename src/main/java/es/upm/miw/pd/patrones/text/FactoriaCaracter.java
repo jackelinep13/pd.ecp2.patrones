@@ -1,12 +1,20 @@
 package es.upm.miw.pd.patrones.text;
 
 public class FactoriaCaracter {
-
-	public Caracter get(char key) {
+	private static FactoriaCaracter factory;
+	
+	private FactoriaCaracter(){		
+	}
+		
+	public Caracter get(char caracter) {			
 		return null;
 	}
-
+	
 	public static FactoriaCaracter getFactoria() {
-		return null;
-	}
+		// Creación perezosa
+			if (FactoriaCaracter.factory == null) {
+				FactoriaCaracter.factory = new FactoriaCaracter();
+			}
+			return FactoriaCaracter.factory;
+		}
 }
