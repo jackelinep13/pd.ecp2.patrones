@@ -1,10 +1,6 @@
 package es.upm.miw.pd.ecp2.patrones.calculadora;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import upm.jbb.IO;
-import upm.jbb.io.Log;
 
 public class MainCalculadoraMementable {
 	private GestorComandos gestor;
