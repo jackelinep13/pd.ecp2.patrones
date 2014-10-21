@@ -13,7 +13,7 @@ public class ComandoRestar extends ComandoRaiz {
 
     @Override
     public void execute() {
-        this.calculadora.restar(IO.in.readInt("Escribe el numero: "));
+        this.calculadora.restar(IO.in.readInt("Escribe el numero a restar: "));
     }
 
 }

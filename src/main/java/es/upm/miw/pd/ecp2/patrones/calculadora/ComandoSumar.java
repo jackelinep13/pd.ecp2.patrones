@@ -14,7 +14,7 @@ public class ComandoSumar extends ComandoRaiz  {
    
     @Override
     public void execute() {
-        this.calculadora.sumar(IO.in.readInt("Escribe el numero: "));
+        this.calculadora.sumar(IO.in.readInt("Escribe el numero a sumar: "));
     }
 
 }
