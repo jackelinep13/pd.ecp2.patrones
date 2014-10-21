@@ -18,4 +18,14 @@ public class Caracter extends Componente{
 		else  return Character.toString(this.caracter);
 	}
 
+	@Override
+	public void delete(int posicion) {
+		// TODO Auto-generated method stub		
+	}
+
+	@Override
+	public boolean isCompuesto() {
+		return false;
+	}
+
 }
