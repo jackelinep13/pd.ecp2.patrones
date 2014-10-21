@@ -1,13 +1,24 @@
 package es.upm.miw.pd.patrones.text;
 
+import java.util.ArrayList;
+
 public class Texto extends Conjunto {
-	private char caracter;
+	
+	public Texto() {
+		super();
+		this.conjunto = new ArrayList<Componente>();
+
+	}
 	
 	@Override
 	public void add(Componente h) {
-		// TODO Auto-generated method stub
-		
+		conjunto.add(h);
 	}
-
+	
+	@Override
+	public String dibujar(boolean mayusculas) {
+		 return super.dibujar(mayusculas)+"---o---\n";
+	}
+	
 
 }
