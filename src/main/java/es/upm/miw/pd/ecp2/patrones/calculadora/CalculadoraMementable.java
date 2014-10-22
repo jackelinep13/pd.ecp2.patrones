@@ -1,6 +1,7 @@
 package es.upm.miw.pd.ecp2.patrones.calculadora;
 
 
+
 public class CalculadoraMementable extends Calculadora implements Mementable<MementoCalculadora>{
 
     public CalculadoraMementable() {
@@ -15,13 +16,12 @@ public class CalculadoraMementable extends Calculadora implements Mementable<Mem
 
 	@Override
 	public MementoCalculadora guardar() {
-		// TODO Auto-generated method stub
-		return null;
+		return new MementoCalculadora(this.getTotal());
 	}
 
 	@Override
 	public void deshacer(MementoCalculadora memento) {
-		// TODO Auto-generated method stub
+		this.setTotal(memento.getTotal());
 		
 	}
 
